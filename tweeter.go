@@ -31,7 +31,7 @@ func seed() {
 	}
 
 	seedVal := int64(binary.BigEndian.Uint64(seed))
-	fmt.Println("seed value: %d", seedVal)
+	log.Printf("seed value: %d", seedVal)
 	mrand.Seed(seedVal)
 }
 
