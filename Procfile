@@ -1,1 +1,1 @@
-web: ./tweetmickens
+web: bin/tweetmickens
