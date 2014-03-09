@@ -155,7 +155,7 @@ func server() {
 	addr := ":" + port
 	// http.HandleFunc("/reload", httpReload)
 	http.HandleFunc("/tickle", httpTickle)
-	log.Println("starting server")
+	log.Println("starting server on", addr)
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
