@@ -183,10 +183,13 @@ func main() {
 				}
 				break
 			}
+			log.Printf("posting new status")
 			err := postTweet(tweet)
 			if err != nil {
 				fmt.Printf("ERROR: %v\n", err)
 			}
+			log.Println("OK")
+			log.Printf("delay for %s", delay.String())
 			<-time.After(delay)
 		}
 	}()
