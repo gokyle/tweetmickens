@@ -398,13 +398,11 @@ The desire to make systems more reliable is a powerful one; unfortunately, this 
 
 Even if we break the will of the machines with formalism and cryptography, we will never be able to put Ted inside of an encrypted, nested log, and while the datacenter burns and we frantically call Ted’s pager, we will realize that Ted has already left for the cafeteria
 
-As a highly trained academic researcher, I spend a lot of time trying
-to advance the frontiers of human knowledge.
+As a highly trained academic researcher, I spend a lot of time trying to advance the frontiers of human knowledge.
 
 However, as someone who was born in the South, I secretly believe that true progress is a fantasy, and that I need to prepare for the end times, and for the chickens coming home to roost, and fast zombies, and slow zombies, and the polite zombies who say “sir” and “ma’am” but then try to eat your brain to acquire your skills.
 
-When the revolution comes, I need to be prepared; thus, in the quiet moments, when I’m not producing incredible scientific breakthroughs, I think about what I’ll do when the weather forecast inevitably becomes
-RIVERS OF BLOOD ALL DAY EVERY DAY.
+When the revolution comes, I need to be prepared; thus, in the quiet moments, when I’m not producing incredible scientific breakthroughs, I think about what I’ll do when the weather forecast inevitably becomes RIVERS OF BLOOD ALL DAY EVERY DAY.
 
 The main thing that I ponder is who will be in my gang, because the likelihood of post-apocalyptic survival is directly related to the size and quality of your rag-tag group of associates.
 
@@ -427,7 +425,7 @@ A systems programmer will know what to do when society breaks down, because the 
 
 Listen: I’m not saying that other kinds of computer people are useless.
 
- I believe (but cannot prove) that PHP developers have souls.
+I believe (but cannot prove) that PHP developers have souls.
 
 I think it’s great that database people keep trying to improve select-from-where, even though the only queries that cannot be expressed using select-from-where are inappropriate limericks from “The Canterbury Tales.”
 
@@ -451,8 +449,7 @@ However, when HCI people debug their code, it’s like an art show or a meeting 
 
 When HCI code doesn’t work, the problem can be resolved using grand theories that relate form and perception to your deeply personal feelings about ovals.
 
-There will be rich debates about the socioeconomic implications of Helvetica Light, and at some point, you will have to decide whether serifs are daring statements of modernity, or tools of hegemonic oppression that
-implicitly support feudalism and illiteracy.
+There will be rich debates about the socioeconomic implications of Helvetica Light, and at some point, you will have to decide whether serifs are daring statements of modernity, or tools of hegemonic oppression that implicitly support feudalism and illiteracy.
 
 Is pinching-and-dragging less elegant than circling-and-lightly-caressing?
 
@@ -478,8 +475,7 @@ What is despair? I have known it—hear my song.
 
 Despair is when you’re debugging a kernel driver and you look at a memory dump and you see that a pointer has a value of 7.
 
-THERE IS NO HARDWARE ARCHITECTURE THAT IS ALIGNED ON
-7.
+THERE IS NO HARDWARE ARCHITECTURE THAT IS ALIGNED ON 7.
 
 Furthermore, 7 IS TOO SMALL AND ONLY EVIL CODE WOULD TRY TO ACCESS SMALL NUMBER MEMORY.
 
@@ -507,8 +503,7 @@ Indeed, the common discovery mode for an impossibly large buffer error is that y
 
 You might ask, “Why would someone write code in a grotesque language that exposes raw memory addresses? Why not use a modern language with garbage collection and functional programming and free massages after lunch?”
 
-Here’s the answer: Pointers are real. They’re what the hardware under-
-stands. Somebody has to deal with them.
+Here’s the answer: Pointers are real. They’re what the hardware understands. Somebody has to deal with them.
 
 You can’t just place a LISP book on top of an x86 chip and hope that the hardware learns about lambda calculus by osmosis.
 
@@ -518,8 +513,7 @@ Pointers are like Krackens—real, living things that must be dealt with so that
 
 Make no mistake, I don’t want to write systems software in a language like C++.
 
-Similar to the Necronomicon, a C++ source code file is a wicked, obscure document that’s filled with cryptic incantations and forbidden knowl-
-edge.
+Similar to the Necronomicon, a C++ source code file is a wicked, obscure document that’s filled with cryptic incantations and forbidden knowledge.
 
 When it’s 3 A.M., and you’ve been debugging for 12 hours, and you encounter a virtual static friend protected volatile templated function pointer, you want to go into hibernation and awake as a werewolf and then find the people who wrote the C++ standard and bring ruin to the things that they love.
 
@@ -568,9 +562,7 @@ issues.”
 
 “When I asked a girl to the prom, I DISCOVERED THAT HER FATHER WAS STALIN.”
 
-In conclusion, I’m not saying that everyone should be a systems hacker. GUIs are useful.
-
-Spell-checkers are useful.
+In conclusion, I’m not saying that everyone should be a systems hacker. GUIs are useful. Spell-checkers are useful.
 
 I’m glad that people are working on new kinds of bouncing icons because they believe that humanity has solved cancer and homelessness and now lives in a consequence-free world of immersive sprites.
 
@@ -587,5 +579,3 @@ Only through the constant vigilance of my people do you get the freedom o think 
 So, if you see me wandering the halls, trying to explain synchronization bugs to confused monks, rest assured that every day, in every way, it gets a little better. For you, not me.
 
 I'll always be furious at the number 7, but such is the hero's journey.
-
-
