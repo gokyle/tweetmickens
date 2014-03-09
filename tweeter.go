@@ -175,18 +175,17 @@ func main() {
 			delay *= 1000000000
 
 			var tweet string
-			for {
-				i := mrand.Int() % (len(mickens))
-				tweet = mickens[i]
-				if len(tweet) > 140 {
-					continue
-				}
-				break
-			}
+			i := mrand.Int() % (len(mickens))
+			tweet = mickens[i]
+			tweets := splitForTweet(tweet)
 			log.Printf("posting new status")
-			err := postTweet(tweet)
-			if err != nil {
-				fmt.Printf("ERROR: %v\n", err)
+			for i := 0; i < len(tweets); i++ {
+				log.Printf("tweet %d / %d", i, len(tweets))
+				err := postTweet(tweets[i])
+				if err != nil {
+					fmt.Printf("ERROR: %v\n", err)
+				}
+				<-time.After(250 * time.Millisecond)
 			}
 			log.Println("OK")
 			log.Printf("delay for %s", delay.String())
