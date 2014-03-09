@@ -29,7 +29,10 @@ func seed() {
 	if err != nil {
 		fmt.Printf("FATAL: %v\n", err)
 	}
-	mrand.Seed(int64(binary.BigEndian.Uint64(seed)))
+
+	seedVal := int64(binary.BigEndian.Uint64(seed))
+	fmt.Println("seed value: %d", seedVal)
+	mrand.Seed()
 }
 
 func loadMickens() ([]string, error) {
