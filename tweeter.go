@@ -13,7 +13,9 @@ import (
 	"net/http"
 	"net/url"
 	"os"
+	"os/signal"
 	"strings"
+	"syscall"
 	"time"
 )
 
@@ -167,24 +169,29 @@ func main() {
 	}
 
 	go server()
-
-	for {
-		delay := time.Duration(mrand.Int63()%7200 + 3600)
-		delay *= 1000000000
-
-		var tweet string
+	go func() {
 		for {
-			i := mrand.Int() % (len(mickens))
-			tweet = mickens[i]
-			if len(tweet) > 140 {
-				continue
+			delay := time.Duration(mrand.Int63()%7200 + 3600)
+			delay *= 1000000000
+
+			var tweet string
+			for {
+				i := mrand.Int() % (len(mickens))
+				tweet = mickens[i]
+				if len(tweet) > 140 {
+					continue
+				}
+				break
 			}
-			break
+			err := postTweet(tweet)
+			if err != nil {
+				fmt.Printf("ERROR: %v\n", err)
+			}
+			<-time.After(delay)
 		}
-		err := postTweet(tweet)
-		if err != nil {
-			fmt.Printf("ERROR: %v\n", err)
-		}
-		<-time.After(delay)
-	}
+	}()
+	sigc := make(chan os.Signal, 1)
+	signal.Notify(sigc, os.Kill, os.Interrupt, syscall.SIGTERM)
+	<-sigc
+	log.Println("shutting down.")
 }
