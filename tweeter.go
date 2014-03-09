@@ -8,7 +8,6 @@ import (
 	"github.com/kurrik/oauth1a"
 	"github.com/kurrik/twittergo"
 	"io"
-	"io/ioutil"
 	"log"
 	mrand "math/rand"
 	"net/http"
@@ -141,6 +140,10 @@ func httpReload(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func httpTickle(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("OK"))
+}
+
 func server() {
 	port := os.Getenv("PORT")
 	if port == "" {
@@ -148,7 +151,10 @@ func server() {
 	}
 
 	addr := ":" + port
-	http.Handle()
+	// http.HandleFunc("/reload", httpReload)
+	http.HandleFunc("/tickle", httpTickle)
+	log.Println("starting server")
+	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
 func main() {
@@ -159,6 +165,8 @@ func main() {
 		fmt.Printf("[!] %v\n", err)
 		return
 	}
+
+	go server()
 
 	for {
 		delay := time.Duration(mrand.Int63()%7200 + 3600)
