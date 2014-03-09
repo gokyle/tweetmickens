@@ -32,7 +32,7 @@ func seed() {
 
 	seedVal := int64(binary.BigEndian.Uint64(seed))
 	fmt.Println("seed value: %d", seedVal)
-	mrand.Seed()
+	mrand.Seed(seedVal)
 }
 
 func loadMickens() ([]string, error) {
@@ -174,11 +174,11 @@ func main() {
 	go server()
 	go func() {
 		for {
-			delay := time.Duration(mrand.Int63()%7200 + 3600)
+			delay := time.Duration(mrand.Int63n(7200) + 3600)
 			delay *= 1000000000
 
 			var tweet string
-			i := mrand.Int() % (len(mickens))
+			i := mrand.Intn(len(mickens))
 			tweet = mickens[i]
 			tweets := splitForTweet(tweet)
 			log.Printf("posting new status")
