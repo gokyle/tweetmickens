@@ -257,8 +257,7 @@ JavaScript is dynamically typed, and its aggressive type coercion rules were app
 For example, 12 == “12” because the string is coerced into a num-
 ber. This is a bit silly, but it kind of makes sense.
 
-Now consider the fact that null == undefined. That is completely janky; areference that points to null is not undefined—IT IS DEFINED
-AS POINTING TO THE NULL VALUE.
+Now consider the fact that null == undefined. That is completely janky; areference that points to null is not undefined—IT IS DEFINED AS POINTING TO THE NULL VALUE.
 
 And now that you’re warmed up, look at this: “\r\n\t” == false.
 
