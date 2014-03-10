@@ -183,7 +183,7 @@ func main() {
 			tweets := splitForTweet(tweet)
 			log.Printf("posting new status")
 			for i := 0; i < len(tweets); i++ {
-				log.Printf("tweet %d / %d", i, len(tweets)-1)
+				log.Printf("tweet %d / %d", i+1, len(tweets))
 				err := postTweet(tweets[i])
 				if err != nil {
 					fmt.Printf("ERROR: %v\n", err)
