@@ -254,14 +254,13 @@ The basic story is that, in the ’90s, when JavaScript and Java were competing 
 
 JavaScript is dynamically typed, and its aggressive type coercion rules were apparently designed by Monty Python.
 
-For example, 12 == “12” because the string is coerced into a num-
-ber. This is a bit silly, but it kind of makes sense.
+For example, 12 == “12” because the string is coerced into a number. This is a bit silly, but it kind of makes sense.
 
 Now consider the fact that null == undefined. That is completely janky; areference that points to null is not undefined—IT IS DEFINED AS POINTING TO THE NULL VALUE.
 
 And now that you’re warmed up, look at this: “\r\n\t” == false.
 
- Here’s why: the browser detects that the two operands have different types, so it converts false to 0 and retries the comparison. The operands
+Here’s why: the browser detects that the two operands have different types, so it converts false to 0 and retries the comparison. The operands
 still have different types (string and number), so the browser
 coerces “\r\n\t” into the number 0 , because somehow, a
 non-zero number of characters is equal to 0 . Voila — 0 equals
@@ -269,17 +268,15 @@ non-zero number of characters is equal to 0 . Voila — 0 equals
 
 That explanation was like the plot to Inception, but the implanted idea was “the correctness of your program has been coerced to false .”
 
-Hello, kind stranger—let me keep you warm during this cold
-winter night!
+Hello, kind stranger—let me keep you warm during this cold winter night!
 
 Did you know that JavaScript defines a special NaN (“not a number”) value? This value is what you get when you do foolish things like parseInt(“BatmanIsNotAnInteger”).
 
 In other words, NaN is a value that is not indicative of a number. However, typeof(NaN) returns... “number.”
 
- A more obvious return value would be “HAIL BEELZEBUB, LORD OF DARKNESS,” but I digress.
+A more obvious return value would be “HAIL BEELZEBUB, LORD OF DARKNESS,” but I digress.
 
 By the way, NaN != NaN , so Aristotle was wrong about that whole “Law of Identity” thing.
-
 
 DECAPITATE ME AND BURN MY WRITHING BODY WITH FIRE.
 
@@ -578,3 +575,440 @@ Only through the constant vigilance of my people do you get the freedom o think 
 So, if you see me wandering the halls, trying to explain synchronization bugs to confused monks, rest assured that every day, in every way, it gets a little better. For you, not me.
 
 I'll always be furious at the number 7, but such is the hero's journey.
+
+According to my dad, flying in airplanes used to be fun.
+
+You could smoke on the plane, and smoking was actually good for you.
+
+Everybody was attractive, and there were no fees for anything, and there
+was so much legroom that you could orient your body parts in arbitrary and profane directions without bothering anyone, and you could eat caviar and manatee steak as you were showered with piles of money that were personally distributed by JFK and The Beach Boys.
+
+Times were good, assuming that you were a white man in the advertising business, WHICH MY FATHER WAS NOT SO PERHAPS I SHOULD ASK HIM SOME FOLLOW-UP QUESTIONS BUT I DIGRESS.
+
+The point is that flying in airplanes used to be fun, but now it resembles a dystopian bin-packing problem in which humans, carry-on luggage, and five dollar peanut bags compete for real estate while crying children materialize from the ether and make obscure demands in unintelligible, Wookie-like languages while you fantasize about who you won’t be helping when the oxygen masks descend.
+
+I think that it used to be fun to be a hardware architect. Anything that you invented would be amazing, and the laws of physics were actively trying to help you succeed.
+
+Your friend would say, “I wish that we could predict branches more accurately,” and you’d think, “maybe we can leverage three bits of state per branch to implement a simple saturating counter,” and you’d laugh and declare that such a stupid scheme would never work, but then you’d test it and it would be 94% accurate, and the branches would wake up the next morning and read their newspapers and the headlines would say OUR WORLD HAS BEEN SET ON FIRE.
+
+You’d give your buddy a high-five and go celebrate at the bar, and then you’d think, “I wonder if we can make branch predictors even more accurate,” and the next day you’d start XOR’ing the branch’s PC address with a shift register containing the branch’s recent branching history, because in those days, you could XOR anything with anything and get something useful, and you test the new branch predictor, and now you’re up to 96% accuracy, and the branches call you on the phone and say OK, WE GET IT, YOU DO NOT LIKE BRANCHES, but the phone call goes to your voicemail because you’re too busy driving the speed boats and wearing the monocles that you purchased after your promotion at work.
+
+You go to work hung-over, and you realize that, during a drunken conference call, you told your boss that your processor has 32 registers when it only has 8, but then you realize THAT YOU CAN TOTALLY LIE ABOUT THE NUMBER OF PHYSICAL REGISTERS, and you invent a crazy hardware mapping scheme from virtual registers to physical ones, and at this point, you start seducing the spouses of the compiler team, because it’s pretty clear that compilers are a thing of the past, and the next generation of processors will run English-level pseudocode directly.
+
+Of course, pride precedes the fall, and at some point, you realize that to implement aggressive out-of-order execution, you need to fit more transistors into the same die size, but then a material science guy pops out of a birthday ake and says YEAH WE CAN DO THAT, and by now, you’re
+touring with Aerosmith and throwing Matisse paintings from hotel room windows, because when you order two Matisse paintings from room service and you get three, that equation is going to be balanced.
+
+It all goes so well, and the party keeps getting better. When you retire in 2003, your face is wrinkled from all of the smiles, and even though you’ve been sued by several pedestrians who suddenly acquired rare paintings as hats, you go out on top, the master of your domain.
+
+You look at your son John, who just joined Intel, and you rest well at night, knowing that he can look forward to a pliant universe and an easy life.
+
+Unfortunately for John, the branches made a pact with Satan and quantum mechanics during a midnight screening of “Weekend at Bernie’s II.”
+
+In exchange for their last remaining bits of entropy, the branches cast evil spells on future generations of processors.
+
+Those evil spells had names like “scaling-induced voltage leaks” and “increasing levels of waste heat” and “Pauly Shore, who is only loosely connected to computer architecture, but who will continue to produce a new movie every three years until he sublimates into an empty bag of Cheetos and a pair of those running shoes that have individual toes and that make you look like you received a foot transplant from a Hobbit, Sasquatch, or an infertile Hobbit/Sasquatch hybrid.”
+
+Once again, I digress. The point is that the branches, those vanquished foes from long ago, would have the last laugh.
+
+When John went to work in 2003, he had an indomitable spirit and a love for danger, reminding people of a less attractive Ernest Hemingway or an equivalently attractive Winston Churchill.
+
+As a child in 1977, John had met Gordon Moore; Gordon had pulled a quarter from behind John’s ear and then proclaimed that he would pull twice as many quarters from John’s ear every 18 months.
+
+Moore, of course, was an incorrigible liar and tormentor of youths, and he never pulled another quarter from John’s ear again, having immediately fled the scene while yelling that Hong Kong will always be a British territory, and nobody will ever pay $8 for a Mocha Frappuccino, and a variety of other things that seemed like universal laws to people at the time, but were actually just arbitrary nouns and adjectives that Moore had scrawled on a napkin earlier that morning.
+
+Regardless, John was changed forever, and when he grew up and became a hardware architect, he poured all of his genius into making transistors smaller and more efficient.
+
+For a while, John’s efforts were rewarded with ever-faster CPUs, but at a certain point, the transistors became so small that they started to misbehave.
+
+They randomly switched states; they leaked voltage; they fell prey to the seductive whims of cosmic rays that, unlike the cosmic rays in comic books, did not turn you into a superhero, but instead made your transistors unreliable and shiftless, like a surly teenager who is told to clean his room and who will occasionally just spray his bed with Lysol and declare victory.
+
+As the transistors became increasingly unpredictable, the foundations of John’s world began to crumble.
+
+So, John did what any reasonable person would do: he cloaked himself in a wall of denial and acted like nothing had happened.
+
+“Making processors faster is increasingly difficult,” John thought, “but maybe people won’t notice if I give them more processors.”
+
+This, of course, was a variant of the notorious Zubotov Gambit, named after the Soviet-era car manufacturer who abandoned its attempts to make its cars not explode, and instead offered customers two Zubotovs for the price of one, under the assumption that having two occasionally combustible items will distract you from the fact that both items are still occasionally combustible. John quietly began to harness a similar strategy,
+telling his marketing team to deemphasize their processors’ speed, and emphasize their level of parallelism.
+
+At first, John’s processors flew off the shelves. Indeed, who wouldn’t want an octavo-core machine with 73 virtual hyper-threads per physical processor?
+
+Alan Greenspan’s loose core policy and weak parallelism regulation were declared a resounding success, and John sipped on champagne as he watched the money roll in.
+
+However, a bubble is born so that a bubble can pop, and this one was no different.
+
+John’s massive parallelism strategy assumed that lay people use their computers to simulate hurricanes, decode monkey genomes, and otherwise multiply vast, unfathomably dimensioned matrices in a desperate attempt to unlock eigenvectors whose desolate grandeur could only be imagined by Edgar Allen Poe.
+
+Of course, lay people do not actually spend their time trying to invert massive hash values while rendering nine copies of the Avatar planet in 1080p.
+
+Lay people use their computers for precisely ten things, none of which involve massive computational parallelism, and seven of which involve procuring a vast menagerie of pornographic data and then curating that data using a variety of fairly obvious management techniques, like the creation of a folder called “Work Stuff,” which contains an inner folder called “More Work Stuff,” where “More Work Stuff” contains a series of ostensible documentaries that describe the economic interactions between people who don’t have enough money to pay for pizza and people who aren’t too bothered by that fact.
+
+Thus, when John said “imagine a world in which you’re constantly executing millions of parallel tasks,” it was equivalent to saying “imagine a world that you do not and will never live in.”
+
+Indeed, a world in which you’re constantly simulating nuclear explosions while rendering massive 3-D environments is a world that’s been taken over by members of a high school A.V. club.
+
+The members of a high school A.V. club lack the chops to establish a global dictatorship, if only because oing such a thing would require them to reduce their visits to Renaissance festivals, and those turkey legs need help to be consumed in the style of a 15th century Italian aristocrat.
+
+John was terrified by the collapse of the parallelism bubble, and he quickly discarded his plans for a 743-core processor that was dubbed The Hydra of Destiny and whose abstract Platonic ideal was briefly the third-best chess player in Gary, Indiana.
+
+Clutching a bottle of whiskey in one hand and a shotgun in the other, John scoured the research literature for ideas that might save his dreams of infinite scaling.
+
+He discovered several papers that described software-assisted hardware recovery.
+
+The basic idea was simple: if hardware suffers more transient failures as it gets smaller, why not allow software to detect erroneous computations and re-execute them?
+
+This idea seemed promising until John realized THAT IT WAS THE WORST IDEA EVER.
+
+Modern software barely works when the hardware is correct, so relying on software to correct hardware errors is like asking Godzilla to prevent Mega-Godzilla from terrorizing Japan.
+
+THIS DOES NOT LEAD TO RISING PROPERTY VALUES IN TOKYO.
+
+It’s better to stop scaling your transistors and avoid playing with monsters in the first place, instead of devising an elaborate series of monster checks-and-balances and then hoping that the monsters don’t do what monsters are always going to do because if they didn’t do those things, they’d be called dandelions or puppy hugs.
+
+At this point, John was living under a bridge and wearing a bird’s nest as a hat.
+
+Despite his tragic sartorial collaborations with the avian world, John still believed that somehow, some way, he could continue to make his transistors smaller.
+
+Perhaps the processor could run multiple copies of each program, comparing the results to detect errors?
+
+Perhaps a new video codec could tolerate persistently hateful levels of hardware error?
+
+All of these techniques could be implemented. However, John slowly realized that these solutions were just things that he could do, and inventing “a thing that you could do” is a low bar for human achievement.
+
+If I were walking past your house and I saw that it was on fire, I could try to put out the fire by finding a dingo and then teaching it how to speak Spanish. That’s certainly a thing that I could do.
+
+However, when you arrived at your erstwhile house and found a pile of heirloom ashes, me, and a dingo with a chewed-up Rosetta Stone box, you would be less than pleased, despite my protestations that negative scientific results are useful and I had just proven that Spanish-illiterate dingoes cannot extinguish fires using mind power.
+
+It was at this moment, when John had hit the bottom, that he discovered religion.
+
+John began to attend The Church of the Impending Power Catastrophe. He sat in the pew and he heard the cautionary tales, and he was afraid.
+
+John learned about the new hyper-threaded processor from AMD that ran so hot that it burned a hole to the center of the earth, yelled “I’ve come to rejoin my people!”, discovered that magma people are extremely bigoted against processor people, and then created the Processor Liberation Front to wage a decades-long, hilariously futile War to Burn the Intrinsically OK-With-Being-Burnt Magma People.
+
+John learned about the rumored Intel Septium chip, a chip whose prototype had been turned on exactly once, and which had leaked so much voltage that it had transformed into a young Linda Blair and demanded an exorcism before it embarked on a series of poor career moves that culminated in an inevitable spokesperson role for PETA.
+
+The future was bleak, and John knew that he had to fight it. So, John repented his addiction to scaling, and he rededicated his life to reducing the power consumption of CPUs.
+
+It was a hard path, and a lonely path, but John could find no other way. 
+Formerly the life of the party, John now resembled the scraggly, one-eyed wizard in a fantasy novel who constantly warns the protagonist about the variety of things that can lead to monocular bescragglement.
+
+At team meetings, whenever someone proposed a new hardware feature, John would yell “THE MAGMA PEOPLE ARE WAITING FOR OUR MISTAKES.”
+
+He would then throw a coffee cup at the speaker and say that adding new hardware features would require each processor to be connected to a dedicated coal plant in West Virginia.
+
+John’s coworkers eventually understood his wisdom, and their need to wear coffee-resistant indoor ponchos lessened with time.
+
+Every evening, after John left work, he went to the bus stop and distributed power literature to strangers, telling them to abandon transis-
+tor scaling and save their souls.
+
+Standing next to John, another man wore a sandwich board that said that the Federal Reserve was using fluorinated water to hide the fact that we never landed on the moon.
+
+The sandwich board required no transistors at all. It made John smile.
+
+When John comes home for the holidays, you’re glad that he’s back, but you miss the old twinkle in his eye.
+
+Your thoughts wander to your own glory days thirty years ago, when Aerosmith mistook young John for a large Xanax tablet and tried to trade him for a surface-to-air missile that could be used against anti-classic rock regimes.
+
+Oh, how you laughed! The subsequent visit by Child Protection Services was less amusing, but that was the way that hardware architects lived: working hard, partying hard, and occasionally waking up in Tijuana to discover that your left kidney is missing and your toddler has been shipped to a Columbian arms smuggler.
+
+It was crazy, but you wouldn’t change a thing. Your generation had lived so many dreams, and slain so many foes.
+
+Today, if a person uses a desktop or laptop, she is justifiably angry if she discovers that her machine is doing a non-trivial amount of work.
+
+If her hard disk is active for more than a second per hour, or if her CPU utilization goes above 4%, she either has a computer virus, or she made the disastrous decision to run a Java program.
+
+Either way, it’s not your fault: you brought the fire down from Olympus, and the mortals do with it what they will.
+
+But now, all the easy giants were dead, and John was left to fight the ghosts that Schrödinger had left behind.
+
+“John,” you say as you pour some eggnog, “did I ever tell you how I implemented an out-of-order pipeline with David Hasselhoff and Hulk Hogan’s moustache colorist?”
+
+You are suddenly aware that you left your poncho in the other room.
+
+Mobile computing researchers are a special kind of menace.
+
+They don’t smuggle rockets to Hezbollah, or clone baby seals and then make them work in sweatshops for pennies a day. That’s not the problem with mobile computing people.
+
+The problem with mobile computing people is that they have no shame.
+
+They write research papers with titles like “Crowdsourced Geolocation-based Energy Profiling for Mobile Devices,” as if the most urgent deficiency of smartphones is an insufficient composition of buzzwords.
+
+The real problem with mobile devices is that they are composed of Satan. 
+They crash all of the time, ignore our basic commands, and spend most of their time sullen, quiet, and confused, draining their batteries and converting the energy into waste heat and thwarted dreams.
+
+Smartphones and tablets have essentially become the new printers: things that do not work, and are not expected to work, and whose primary purpose is to inspire gothic conversations about the ultimate futility of the human condition.
+
+People buy mobile devices for the same reason that goldfish swim in their tiny bowls: it’s something to do while we wait for death.
+
+When researchers talk about mobile computers, they use visionary, exciting terms like “fast”, “scalable”, and “this solution will definitely work in practice.”
+
+When real people talk about mobile computers, they sound like they’re describing a scene from the Dust Bowl.
+
+It’s all ellipses and gentle, forlorn shaking of the head. “I tried to load the app...I don’t know what went wrong...I’M SO TIRED AND DUSTY AND BOWLED.”
+
+When I use a mobile browser to load a web page, I literally have no expectation that anything will ever happen.
+
+A successful page load is so unlikely, so unimaginable, that mobile browsers effectively exist outside of causality—the browser is completely divorced from all action verbs, and can only be associated with sad, falling-tone sentences like “I had to give up after twenty seconds.”
+
+The only reason that I use mobile browsers is that I hate myself and I want to be attritioned into unconsciousness by the desperate, spastic gasps of my browser as it struggles to download the 87 MB of Flash and JavaScript that are contained in any website made after the Civil War.
+
+Of course, some web pages are “mobile-enabled,” meaning that they only contain 63 MB of things that I don’t care about, instead of 87 MB of things I don’t care about.
+
+To discover whether a page has a “fast-loading” mobile version, you can try to load the regular version, and then see if you get stuck in a hurricane of HTTP redirects, redirects whose durations have been carefully selected to make the load time of the mobile page completely equivalent to the load time of the standard, redirect-free version.
+
+If the Buddha intervenes and somehow coerces the mobile version of the page to load, you will be rewarded with a “phone-optimized” page that contains 1.5 visual elements (note that the most boring thing in the world has 3 visual elements).
+
+The vast majority of your mobile page will be advertisements for a newly discovered herb from South America that causes amazing weight loss.
+
+The amazingness of the weightloss will be demonstrated by a three-frame animation that depicts a fat person wearing a wife beater, a marginally less fat person wearing a wife beater, and a skinny person who, for inexplicable reasons, is still wearing a wife beater, even though he is now free to date supermodels, wear polar bear jackets, and do all of the other exciting things that skinny people presumably do when they’re pumped full of South American mystery herbs.
+
+Importantly, the advertisements on your phone will position themselves in strategically disrespectful places, carefully obscuring the 0.25 visual elements that you actually want to see.
+
+When you scroll the page, the ads will engage in a frantic dance to reposition themselves in a maximally infuriating way.
+
+You will eventually give up and close the browser, having spent 45 minutes to unsuccessfully load a web page about dogs that look like cats that look like other, different cats.
+
+When touchscreens work, they’re amazing; however, touchscreens are the only commodities which depreciate faster than automobiles.
+
+As soon as you unwrap your phone or tablet, the touchscreen starts to die.
+
+Make no mistake, your initial touchscreen romance will be lovely and
+full.
+
+Hark!—as you effortlessly move neon blobs of information like a character from “Tron”!
+
+Behold!—as you zoom into and out of a dynamically resizable thing that contains additional-but-only-partially-resizable things!
+
+Such experiences represent the springtime of your love, and the initial weeks of your touchscreen romance will be like a young Led Zeppelin, intense and grandiose and punctuated by extended guitar solos.
+
+However, at some point, you will drop your phone or your tablet, and this will mark the beginning of the end.
+
+When you drop a touchscreen, you initiate a complex series of degenerative processes that corrupt the touchscreen and turn its will against you like a pet lizard who has learned that dinosaurs were real BUT IT’S JUST A STATE OF MIND.
+
+Note that, when I say that you will “drop” your touchscreen, I do not mean “drop” in the layperson sense of “to release from a non-trivial height onto a hard surface.” I mean “drop” in the sense of “to place your
+touchscreen on any surface that isn’t composed of angel feathers
+and the dreams of earnest schoolchildren.”
+
+Phones and tablets apparently require Planck-scale mechanical alignments, such that merely looking at the touchscreen introduces fundamental, quantum dynamical changes in the touchscreen’s dilithium crystals.
+
+Thus, if you place your touchscreen on anything, ever, you have made a severe and irreversible life mistake.
+
+Slowly but surely, your touchscreen will develop a series of tics and glitches, behaviors that you will initially explain away as “technology is quirky,” but that you will quickly begin to describe using extraordinary and significant profanities that are normally employed by Marines and people who work with radioactive waste.
+
+On your touchscreen, your swipes will become pinches, and your pinches will become scrolls, and each one of your scrolls will become a complex thing never before seen on this earth, a leviathan meta-touch event of such breadth and complexity that your phone can only respond like Carrie White at the prom.
+
+So, your phone just starts doing stuff, all the stuff that it knows how to do, and it’s just going nuts, and your apps are closing and opening and talking to the cloud and configuring themselves in unnatural ways, and your phone starts vibrating and rumbling with its little rumble pack, and it will gently sing like a tiny hummingbird of hate, and you’ll look at the touchscreen, and you’ll see that things are happening, my god, there are so many happenings, and you’ll try to flip the phone over and take out the battery, because now you just want to kill it and move to Kansas and start over, but the back panel of the phone is attached by a molecule-sized screw that requires a special type of screwdriver that only Merlin possesses, and Merlin isn’t nearby, and your phone is still rumbling, and by this point, you can understand the rumble, it’s a twin language that you and your phone invented, and the phone is rumbling, and it’s saying that it’s far from done, that it has so much more that it wants to do, that there are so many of your frenemies that it wants to “accidentally” call and then leave you to deal with the social ramifications, and your phone, it buzzes, and you think that you see it smiling, and you begin to realize that land-line telephones were actually a pretty good idea.
+
+Interestingly, a mobile phone should be able to make phone calls while it moves through time and space.
+
+I derived this provocative concept from basic notions of adjectives and nouns.
+
+For example, if I am a gregarious jellyfish, I praise my friends for their wardrobe choices (gregarious) while I repeatedly stab them with my poisonous tentacles (jellyfish).
+
+I am a gregarious jellyfish. That is my way. 
+
+I may be misunderstood by polite society, but as a gregarious jellyfish, my dramatic tensions respect the standard semantics for adjectives and nouns.
+
+Similarly, a mobile phone should be able to PHONE PEOPLE while being MOBILE.
+
+However, I have never had a successful conversation on a mobile phone.
+
+Whenever I talk to people on a mobile phone, they always sound distant and/or creepy, like they’re trapped in an echo-filled cave, or a windy cave, or a cave that makes people sound like pedophiles.
+
+These are not good caves to be in, to the extent that it’s ever good to
+be in a cave.
+
+Nobody takes their honeymoon at Persistently Distracting Echo Cave.
+
+Nobody has their Bat Mitzvah at Windy Cave’s 80% Packet Loss Ballroom.
+
+You may, in fact, find online travel deals for Pedo-Cave, but these are all traps that have been set by “To Catch A Predator.”
+
+My point is that mobile phones are not phones. They are just pocket-sized things that are more expensive than the vast majority of other pocket-sized things.
+
+This is why, when you try to talk to someone on a mobile phone, you are thrown into a frantic world of on-the-fly lossy decompression, like Nicholas Cage in that movie about Navajo code talkers (the only movie that managed to simultaneously offend Native Americans, cryptographers, and people who are neither Native Americans nor cryptographically inclined).
+
+In the minds of mobile computing researchers, humanity is nearing a final, glorious stage of Darwinian evolution, in which mankind and smartphones emerge from a shared chrysalis and transform into shapeless, omnipotent joy clouds of excellence and victory, unconstrained by conventional morality or finite battery life.
+
+In reality, you could go to the Middle Ages, find a random person, and take whatever is in his left pocket, and you would have something that is more useful than a modern mobile device (although it may be covered with Bubonic plague or antiquated notions about the stoning of random villagers with respect to the actual size of the witch population).
+
+When you purchase a mobile device, you are basically saying, “I endorse the operational inefficiency of the modern bourgeoisie lifestyle, even though I could find a rock and tie a coat hanger around it and have a better chance of having a phone conversation that doesn’t sound like two monsters arguing about German poetry.”
+
+So, I encourage you to throw your tablets and your mobile phones into a fire, and then hide from the angry monsters who no longer have a way to discuss the work of Klaus von Beckenbauer, the acclaimed poet who wrote “The Unsurprising Laments of the Gregarious Jellyfish,” “Seriously, Todd, You’ve Got To Stop Stabbing People If You Want To Get Married,” and “Yes, Jellyfish Have Names and My Name is Todd.”
+
+Sometimes, when I check my work email, I’ll find a message that says “Talk Announcement: Vertex-based Elliptic Cryptography on N-way Bojangle Spaces.”
+
+I’ll look at the abstract for the talk, and it will say something like this: “It is well-known that five-way secret sharing has been illegal since the Protestant Reformation [Luther1517].
+
+However, using recent advances in polynomial-time Bojangle projections, we demonstrate how a set of peers who are frenemies can exchange up to five snide remarks that are robust to Bojangle-chosen plaintext attacks.” 
+I feel like these emails start in the middle of a tragic but unlikely-to-be-interesting opera.
+
+Why, exactly, have we been thrust into an elliptical world?
+
+Who, exactly, is Bojangle, and why do we care about the text that he chooses?
+
+If we care about him because he has abducted our families, can I at least exchange messages with those family members, and if so, do those messages have to be snide?
+
+Researchers who work on problems like these remind me of my friends who train for triathlons.
+
+When I encounter such a friend, I say, “In the normal universe, when are you ever going to be chased by someone into a lake, and then onto a bike, and then onto a road where you can’t drive a car, but you can run in a wetsuit?
+
+Will that ever happen? If so, instead of training for such an event, perhaps a better activity is to discover why a madman is forcing people to swim, then bike, and then run.”
+
+My friend will generally reply, “Triathlons are good exercise,” and I’ll say, “That’s true, assuming that you’ve made a series of bad life decisions that result in you being hunted by an amphibious Ronald McDonald.”
+
+My friend will say, “How do you know that it’s Ronald McDonald who’s chasing me?”, and I’ll say “OPEN YOUR EYES WHO ELSE COULD IT BE?”, and then my friend will stop talking to me about triathlons, and I will be okay with this outcome.
+
+In general, I think that security researchers have a problem with public relations.
+
+Security people are like smarmy teenagers who listen to goth music: they are full of morbid and detailed monologues about the pervasive catastrophes that surround us, but they are much less interested in the practical topic of what people should do before we’re inevitably killed by ravens or a shortage of black mascara.
+
+It’s like, websites are amazing BUT DON’T CLICK ON THAT LINK, and your phone can run all of these amazing apps BUT MANY OF YOUR APPS ARE EVIL, and if you order a Russian bride on Craigslist YOU MAY GET A CONFUSED FILIPINO MAN WHO DOES NOT LIKE BEING SHIPPED IN A BOX.
+
+It’s not clear what else there is to do with computers besides click on things, run applications, and fill spiritual voids using destitute mail-ordered foreigners.
+
+If the security people are correct, then the only provably safe activity is to stare at a horseshoe whose integrity has been verified by a quorum of Rivest, Shamir, and Adleman.
+
+Somehow, I am not excited to live in the manner of a Pilgrim who magically has access to 3-choose-2 {Rivest, Shamir, Adleman}, mainly because, if I were a bored Pilgrim who possessed a kidnapping time machine, I would kidnap Samuel L. Jackson or Robocop, not mathematical wizards from the future who would taunt me with their knowledge of prime numbers and how “Breaking Bad” ends.
+
+The only thing that I’ve ever wanted for Christmas is an automated way to generate strong yet memorable passwords.
+
+Unfortunately, large swaths of the security community are fixated on avant garde horrors such as the fact that, during solar eclipses, pacemakers can be remotely controlled with a garage door opener and a Pringles can.
+
+It’s definitely unfortunate that Pringles cans are the gateway to an obscure set of Sith-like powers that can be used against the 0.002% of the population that has both a pacemaker and bitter enemies in the electronics hobbyist community.
+
+However, if someone is motivated enough to kill you by focusing electromagnetic energy through a Pringles can, you probably did something to
+deserve that.
+
+I am not saying that I want you dead, but I am saying that you may have to die so that researchers who study per-photon HMACs for pacemaker transmitters can instead work on making it easier for people to generate good passwords.
+
+“But James,” you protest, “there are many best practices for choosing passwords!”
+
+Yes, I am aware of the “use a vivid image” technique, and if I lived in a sensory deprivation tank and I had never used the Internet, I could easily remember a password phrase like “Gigantic Martian Insect Party.”
+
+Unfortunately, I have used the Internet, and this means that I have seen, heard, and occasionally paid money for every thing that could ever be
+imagined.
+
+I have seen a video called “Gigantic Martian Insect Party,” and I have seen another video called “Gigantic Martian Insect Party 2: Don’t Tell Mom,” and I hated both videos, but this did not stop me from directing the sequel “Gigantic Martian Insect Party Into Darkness.”
+
+Thus, it is extremely difficult for me to generate a memorable image that can distinguish itself from the seething ocean of absurdities that I store as a result of consuming 31 hours of media in each 24-hour period.
+
+So, coming up with a memorable image is difficult, and to make things worse, the security people tell me that I need different passwords for different web sites.
+
+Now I’m expected to remember both “Gigantic Martian Insect Party” and “Structurally Unsound Yeti Tote-bag,” and I have to somehow recall which phrase is associated with my banking web site, and which one is associated with some other site that doesn’t involve extraterrestrial insects or Yeti accoutrements.
+
+This is uncivilized and I demand more from life.
+
+Thus, when security researchers tell me that they’re not working on passwords, it’s like physicists from World War II telling me that they’re not working on radar or nuclear bombs, but instead they’re unravelling the mystery of how bumblebees fly.
+
+It’s like, you are so close, and yet so far. You almost get it, but that’s worse than not getting it at all.
+
+My point is that security people need to get their priorities straight. 
+
+The “threat model” section of a security paper resembles the script for a telenovela that was written by a paranoid schizophrenic: there are elaborate narratives and grand conspiracy theories, and there are heroes and villains with fantastic (yet oddly constrained) powers that necessitate a grinding battle of emotional and technical attrition.
+
+In the real world, threat models are much simpler.
+
+Basically, you’re either dealing with Mossad or not-Mossad.
+
+If your adversary is not-Mossad, then you’ll probably be fine if you pick a good password and don’t respond to emails from ChEaPestPAiNPi11s@virus-basket.biz.ru.
+
+If your adversary is the Mossad, YOU’RE GONNA DIE AND THERE’S NOTHING THAT YOU CAN DO ABOUT IT.
+
+The Mossad is not intimidated by the fact that you employ https://.
+
+If the Mossad wants your data, they’re going to use a drone to replace your cellphone with a piece of uranium that’s shaped like a cellphone, and when you die of tumors filled with tumors, they’re going to hold a press conference and say “It wasn’t us” as they wear t-shirts that say “IT WAS DEFINITELY US,” and then they’re going to buy all of your stuff at your estate sale so that they can directly look at the photos of your vacation instead of reading your insipid emails about them.
+
+In summary, https:// and two dollars will get you a bus ticket to nowhere. 
+
+Also, SANTA CLAUS ISN’T REAL.
+
+When it rains, it pours.
+
+The Mossad/not-Mossad duality is just one of the truths that security researchers try to hide from you.
+
+The security community employs a variety of misdirections and soothing words to obscure the ultimate nature of reality; in this regard, they resemble used car salesmen and Girl Scouts (whose “cookie sales” are merely shell companies for the Yakuza).
+
+When you read a security paper, there’s often a sentence near the beginning that says “assume that a public key cryptosystem exists.”
+
+The authors intend for you to read this sentence in a breezy, carefree way, as if establishing a scalable key infrastructure is a weekend project, akin to organizing a walk-in closet or taming a chinchilla.
+
+Given such a public key infrastructure, the authors propose all kinds of entertaining, Ferris Bueller-like things that you can do, like taking hashes of keys, and arranging keys into fanciful tree-like structures, and determining which users are bad so that their keys can be destroyed, or revoked, or mixed with concrete and rendered inert.
+
+To better describe the Mendelian genetics of keys, the authors will define kinky, unnatural operators for the keys, operators that are described as unholy by the Book of Leviticus and the state of Alabama, and whose definitions require you to parse opaque, subscript-based sentences like “Let K_R ₩ K_T represent the semi-Kasparov foo-dongle operation in a bipartite XY abc space, such that the modulus is spilt but a new key is not made.”
+
+This Caligula-style key party sounds like great fun, but constructing a public key infrastructure is incredibly difficult in practice.
+
+When someone says “assume that a public key cryptosystem exists,” this is roughly equivalent to saying “assume that you could clone dinosaurs, and that you could fill a park with these dinosaurs, and that you could get a ticket to this ‘Jurassic Park,’ and that you could stroll throughout this park without getting eaten, clawed, or otherwise quantum entangled with a macroscopic dinosaur particle.”
+
+With public key cryptography, there’s a horrible, fundamental challenge of finding somebody, anybody, to establish and maintain the infrastructure.
+
+For example, you could enlist a well-known technology company to do it, but this would offend the refined aesthetics of the vaguely Marxist but comfortably bourgeoisie hacker community who wants everything to be decentralized and who non-ironically believes that Tor is used for things
+besides drug deals and kidnapping plots.
+
+Alternatively, the public key infrastructure could use a decentralized “web-of-trust” model; in this architecture, individuals make their
+own keys and certify the keys of trusted associates, creating
+chains of attestation.
+
+“Chains of Attestation” is a great name for a heavy metal band, but it is less practical in the real, non-Ozzy-Ozbourne-based world, since I don’t just need a chain of attestation between me and some unknown, filthy stranger —­I also need a chain of attestation for each link in that chain.
+
+This recursive attestation eventually leads to fractals and H.P. Lovecraft-style madness.
+
+Web-of-trust cryptosystems also result in the generation of emails with incredibly short bodies (e.g., “R U gonna be at the gym 2nite?!?!?!?”) and multi-kilobyte PGP key attachments, leading to a packet framing overhead of 98.5%.
+
+PGP enthusiasts are like your friend with the ethno-literature degree whose multi-paragraph email signature has fourteen Buddhist quotes about wisdom and mankind’s relationship to trees.
+
+It’s like, I GET IT. You care deeply about the things that you care about.
+
+Please leave me alone so that I can ponder the inevitability of death.
+
+Even worse than the PGP acolytes are the folks who claim that we can use online social networks to bootstrap a key infrastructure.
+
+Sadly, the people in an online social network are the same confused, ill-equipped blunderhats who inhabit the physical world.
+
+Thus, social network people are the same people who install desktop search toolbars, and who try to click on the monkey to win an iPad, and who are willing to at least entertain the notion that buying a fortune-telling app for any more money than “no money” is a good idea.
+
+These are not the best people in the history of people, yet somehow, I am supposed to stitch these clowns into a rich cryptographic tapestry that supports key revocation and verifiable audit trails.
+
+One time, I was on a plane, and a man asked me why his laptop wasn’t working, and I tried to hit the power button, and I noticed that the power button was sticky, and I said, hey, why is the power button sticky, and he said, oh, IT’S BECAUSE I SPILLED AN ENTIRE SODA ONTO IT BUT THAT’S NOT A PROBLEM RIGHT?
+
+I don’t think that this dude is ready to orchestrate cryptographic operations on 2048-bit integers.
+
+Another myth spread by security researchers is that the planet Earth contains more than six programmers who can correctly use security labels and information flow control.
+
+This belief requires one to assume that, even though the most popular variable names are “thing” and “thing2,” programmers will magically become disciplined software architects when confronted with a Dungeons-and-Dragons-style type system that requires variables to be annotated with rich biographical data and a list of vulnerabilities to output sinks.
+
+People feel genuine anxiety when asked if they want large fries for just 50 cents more, so I doubt that unfathomable lattice-based calculus is going to be a hit with the youths.
+
+I mean, yes, I understand how one can use labels to write a secure version of HelloWorld(), but once my program gets bigger than ten functions, my desire to think about combinatorial label flows will decrease and be replaced by an urgent desire to DECLASSIFY() so that I can go home and stop worrying about morally troubling phrases like “taint explosion” that are typically associated with the diaper industry and FEMA.
+
+I realize that, in an ideal world, I would recycle my trash, and contribute 10% of my income to charity, and willingly accept the cognitive overhead of fine-grained security labels.
+
+However, pragmatists understand that I will spend the bulk of my disposable income on comic books, and instead of recycling, I will throw all of my trash into New Jersey, where it will self-organize into elaborate “Matrix”-like simulations of the seagull world, simulations that consist solely of choking-hazard-sized particles and seagull-shaped objects that are not seagulls and that will not respond to seagull mating rituals by producing new seagull children.
+
+This is definitely a problem, but problem identification is what makes science fun, and now we know that we need to send SWAT teams into New Jersey to disarm a trash-based cellular automaton that threatens the seagull way of life.
+
+Similarly, we know that IFC research should not focus on what would happen if I somehow used seventeen types of labels to describe three types of variables.
+
+Instead, IFC research should focus on what will happen when I definitely give all my variables The God Label so that my program compiles and I can return to my loved ones.
+
+Incidentally, I think that “The God Label” was an important plot device in the sixth “Dune” novel, but I stopped reading that series after the fifth book and my seven-hundredth time reading a speech that started “WHOEVER CONTROLS THE SPICE CONTROLS THE (SOME THING WHICH IS NOT THE SPICE).”
+
+Also note that if a police officer ever tries to give you a speeding ticket, do not tell him that you are the Kwisatz Haderach and You Can See Where No Bene Gesserit Can See and you cannot see a speeding ticket.
+
+This defense will not hold up in court, and the only “spice” that you will find in prison is made of mouthwash and fermented oranges.
+
+The worst part about growing up is that the world becomes more constrained.
+
+As a child, it seems completely reasonable to build a spaceship out of bed sheets, firecrackers, and lawn furniture; as you get older, you realize that the S.S. Improbable will not take you to space, but instead a lonely killing field of fire, Child Protective Services, and awkward local news interviews, not necessarily in that order, but with everything showing up eventually.
+
+Security research is the continual process of discovering that your spaceship is a deathtrap. 
+
+However, as John F. Kennedy once said, “SCREW IT WE’RE GOING TO THE
+MOON.”
+
+I cannot live my life in fear because someone named PhreakusMaximus at DefConHat 2014 showed that you can induce peanut allergies at a distance using an SMS message and a lock of your victim’s hair.
+
+If that’s how it is, I accept it and move on. Thinking about security is like thinking about where to ride your motorcycle: the safe places are no fun, and the fun places are not safe.
+
+I shall ride wherever my spirit takes me, and I shall find my Gigantic Martian Insect Party, and I will, uh, probably be rent asunder by huge cryptozoological mandibles, but I will die like Thomas Jefferson: free, defiant, and without a security label.
